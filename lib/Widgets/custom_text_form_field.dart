@@ -36,7 +36,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      autovalidateMode: AutovalidateMode.always,
+      autovalidateMode: AutovalidateMode.onUserInteraction,
       controller: widget.controller,
       obscureText: widget.isPassword ? _isObscure : false,
       keyboardType: widget.keyboardType,
@@ -45,7 +45,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
         labelText: widget.labelText,
         hintText: widget.hintText,
         prefixIcon: Icon(widget.prefixIcon),
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
         suffixIcon:
             widget.isPassword
                 ? IconButton(

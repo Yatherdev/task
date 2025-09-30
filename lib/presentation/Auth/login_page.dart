@@ -61,16 +61,11 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Lottie.asset(
-                  'Assets/animation/splash.json',
+                Image.asset(
+                  'Assets/images/bloodbag1.png',
                   width: 200,
                   height: 200,
                   fit: BoxFit.contain,
-                  onLoaded: (composition) {
-                    Future.delayed(composition.duration, () {
-                      Duration(seconds: 20);
-                    });
-                  },
                 ),
                 Container(
                   decoration: BoxDecoration(

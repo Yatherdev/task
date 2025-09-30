@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class CustomColors {
   // درجات الدم
+  static const Color white = Color(0xFFFFFFFF);
   static const Color oxygenated = Color(0xFFFF4C4C); // دم مؤكسج (فاتح)
   static const Color arterial   = Color(0xFFB22222); // دم قاني
   static const Color venous     = Color(0xFF8A0303); // دم وريدي

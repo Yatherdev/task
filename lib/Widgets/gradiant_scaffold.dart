@@ -14,9 +14,7 @@ class GradientScaffold extends StatelessWidget {
     required this.body,
     this.title,
     this.gradientColors = const [
-      CustomColors.oxygenated,
-      CustomColors.arterial,
-      CustomColors.venous,
+      CustomColors.white,
       CustomColors.clotted,
       CustomColors.dried,
     ],
